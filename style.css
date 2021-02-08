@@ -1,0 +1,13 @@
+/* jumbotron */
+* {
+  font-family: 'Roboto';
+}
+
+.jumbotron {
+  background-image: url(image/poster.jpg);
+  background-size: cover;
+  background-position: 0px -80px;
+  height: 450px;
+  position: relative;
+
+}
