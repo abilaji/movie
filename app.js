@@ -33,7 +33,7 @@ function getMovies() {
 
 async function tampilMovie() {
   const coba = await getMovies();
-}
+};
 tampilMovie();
 
 function showCards(m) {
