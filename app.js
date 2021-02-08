@@ -3,7 +3,7 @@
 
 // mengambil data dari api menggunakan fetch
 function getMovies() {
-  return fetch('http://www.omdbapi.com/?apikey=1ef012a5&s=avengers')
+  return fetch('https://www.omdbapi.com/?apikey=1ef012a5&s=avengers')
     .then(response => response.json()) //ubah data promese menjadi json
     .then(response => {
       const movies = response.Search;
@@ -19,7 +19,7 @@ function getMovies() {
       detailMovie.forEach(btn => {
         btn.addEventListener('click', function () {
           const imdbid = this.dataset.imdbid;
-          fetch('http://www.omdbapi.com/?apikey=1ef012a5&i=' + imdbid)
+          fetch('https://www.omdbapi.com/?apikey=1ef012a5&i=' + imdbid)
             .then(response => response.json())
             .then(m => {
               const detailModal = showDetail(m);
